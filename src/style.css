@@ -6,8 +6,6 @@
 
 body {
     background-color: black;
-    height: 100%;
-    width: 100%;
     color: white;
     margin: 0;
     padding: 0;
@@ -30,15 +28,12 @@ nav {
     background-color: rgb(59, 21, 92);
 }
 
-
-
 .nav-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
-    margin-right: auto;
 }
 
 nav ul {
@@ -67,16 +62,16 @@ nav ul li a:not(.active):hover {
 
 nav .menu {
     position: absolute;
-    top: 0.9rem;
-    right: 0.5rem;
+    top: 1.4rem;
+    left: 1rem;
     flex-direction: column;
     justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+    width: 2rem;
+    height: 1.4rem;
 }
 
 nav .menu span {
-    height: 0.1rem;
+    height: 0.3rem;
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -118,7 +113,7 @@ nav .menu span {
 }
 
 .toggle .bar1 {
-    transform: rotate(-45deg) translate(-16px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
 }
 
 .toggle .bar2 {
@@ -126,5 +121,5 @@ nav .menu span {
 }
 
 .toggle .bar3 {
-    transform: rotate(45deg) translate(-15px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
 }
