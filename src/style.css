@@ -22,10 +22,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
     font-family: "Rubik";
-    background-color: rgb(59, 21, 92);
+    /* background-color: rgb(59, 21, 92); */
 }
 
 .nav-title {
@@ -58,6 +56,8 @@ nav ul li a:not(.active):hover {
     background-color: black;
 }
 
+
+
 /* NAVBAR TOGGLE */
 
 nav .menu {
@@ -76,6 +76,25 @@ nav .menu span {
     background-color: white;
     border-radius: 10px;
     transition: 0.1s ease-in;
+}
+
+
+
+/* HOME CONTENT */
+
+.home-content {
+    display: flex;
+    background-image: url(E:/coding/SHOOKY/public/Images/shoe2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 2vw;
+    padding: 100px;
+    text-align: center;
 }
 
 @media screen and (max-width : 768px) {
@@ -110,6 +129,13 @@ nav .menu span {
         margin: 0.2rem 0.5rem;
 
     }
+
+    .home-content {
+        font-size: 6vw;
+        padding: 20px;
+
+    }
+
 }
 
 .toggle .bar1 {
