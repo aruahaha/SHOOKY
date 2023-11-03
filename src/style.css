@@ -1,0 +1,130 @@
+/* BODY CONTENT */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVBAR */
+
+.active {
+    color: yellow;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: "Rubik";
+    background-color: rgb(59, 21, 92);
+}
+
+
+
+.nav-title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: black;
+}
+
+/* NAVBAR TOGGLE */
+
+nav .menu {
+    position: absolute;
+    top: 0.9rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.1s ease-in;
+}
+
+@media screen and (max-width : 768px) {
+
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-self: start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+
+    }
+}
+
+.toggle .bar1 {
+    transform: rotate(-45deg) translate(-16px, 5px);
+}
+
+.toggle .bar2 {
+    opacity: 0;
+}
+
+.toggle .bar3 {
+    transform: rotate(45deg) translate(-15px, -5px);
+}
