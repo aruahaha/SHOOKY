@@ -9,6 +9,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    font-family: "Poppins";
 }
 
 
@@ -66,6 +67,7 @@ nav ul li a:not(.active):hover {
 /* NAVBAR TOGGLE */
 
 nav .menu {
+    display: none;
     position: absolute;
     top: 1.5rem;
     right: 1rem;
@@ -89,11 +91,11 @@ nav .menu span {
 
 .home-content {
     display: flex;
-    background-image: url(E:/coding/SHOOKY/public/Images/shoe2.jpg);
+    background-image: url(E:/coding/SHOOKY/public/Images/homeimage.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.479);
     background-blend-mode: darken;
     height: 100vh;
     justify-content: center;
@@ -105,9 +107,59 @@ nav .menu span {
     text-align: center;
 }
 
-.home-video {
-    width: 100%;
-    height: 100%;
+.best-seller-title {
+    text-align: center;
+    font-size: 3vw;
+    font-family: "Rubik";
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.products {
+    margin: 0;
+}
+
+.best-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+    /* background-color: white;
+    padding: 50px 0;
+    color: black;
+    margin: 50px;
+    border-radius: 30px; */
+}
+
+/* .card {
+    width: 400px;
+    margin: 20px;
+} */
+
+.product-img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.1s ease-in;
+}
+
+.product-img-div {
+    overflow: hidden;
+}
+
+.product-img-div:hover .product-img {
+    transform: scale(1.2);
+}
+
+.product-name {
+    margin: 0;
+}
+
+.product-price {
+    margin: 0;
+    font-size: 1vw;
 }
 
 @media screen and (max-width : 768px) {
@@ -147,6 +199,29 @@ nav .menu span {
         font-size: 5vw;
         padding: 20px;
         line-height: 16vw;
+    }
+
+    .product-price {
+        font-size: 5vw;
+    }
+
+    .product-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .best-seller-title {
+        font-size: 9vw;
+    }
+
+    .best-products {
+        margin: 0;
+        background-color: transparent;
+        color: white;
+    }
+
+    .card {
+        margin-bottom: 30px;
     }
 
 }
