@@ -20,8 +20,8 @@ export default function Header() {
                 <li>
                     <NavLink to="/men">Men</NavLink>
                 </li>
-                <li className="nav-women">
-                    <NavLink to="/women">Women</NavLink>
+                <li>
+                    <NavLink className="nav-women" to="/women">Women</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about">About</NavLink>

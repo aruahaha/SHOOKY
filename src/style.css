@@ -23,6 +23,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-family: "Rubik";
+    width: 100%;
     /* background-color: rgb(59, 21, 92); */
 }
 
@@ -32,6 +33,10 @@ nav {
     font-weight: bold;
     text-decoration: none;
     color: white;
+}
+
+.nav-women {
+    margin-right: auto;
 }
 
 nav ul {
@@ -62,8 +67,8 @@ nav ul li a:not(.active):hover {
 
 nav .menu {
     position: absolute;
-    top: 1.4rem;
-    left: 1rem;
+    top: 1.5rem;
+    right: 1rem;
     flex-direction: column;
     justify-content: space-between;
     width: 2rem;
@@ -88,13 +93,21 @@ nav .menu span {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.178);
+    background-blend-mode: darken;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins";
+    font-family: "Rubik";
+    line-height: 5vw;
     font-size: 2vw;
     padding: 100px;
     text-align: center;
+}
+
+.home-video {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width : 768px) {
@@ -131,9 +144,9 @@ nav .menu span {
     }
 
     .home-content {
-        font-size: 6vw;
+        font-size: 5vw;
         padding: 20px;
-
+        line-height: 16vw;
     }
 
 }
